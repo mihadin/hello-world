@@ -7,7 +7,7 @@
     <title>To Do</title>
 
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
 
     <!-- Вставка HTML5 поєднується з Respond.js для підтримки в IE8 елементів HTML5 та медіа-запитів -->
@@ -19,7 +19,40 @@
   </head>
   <body>
 
-    <div id = "header" class = "container">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">ToDoList</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">User name</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!--<div id = "header" class = "container">
       <div class = "row">
         <div class = "">
 
@@ -46,26 +79,31 @@
         </div>
     </div>
      </div>
-  </div>
+  </div> -->
 
 <div class = "left-column">          
      <form>
-      
-                   
-        <br>
-        <button>додати</button>
-        <input type = "botton submit">
+  <div class="input-group">
+      <input type="text" class="form-control" placeholder="What do?">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Do!</button>
+      </span>
+    
+  </div>
         
-        <input type = "reset" name = "delete">
-        <button>редагувати</button>
       </form>
       <form>
       <ul>
         <li> do do do do do </li> <input type = "reset" value = "x">
+        <button>edit</button>
         <li> do do do do do </li> <input type = "reset" value = "x">
+        <button>edit</button>
         <li> do do do do do </li> <input type = "reset" value = "x">
+        <button>edit</button>
         <li> do do do do do </li> <input type = "reset" value = "x">
+        <button>edit</button>
         <li> do do do do do </li> <input type = "reset" value = "x">
+        <button>edit</button>
       </ul>
       </form>
 </div>
@@ -82,6 +120,6 @@
     <!-- jQuery (потрібно для JavaScript плагінів Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Підключення мінімізованої збірки всіх плагінів jQuery. Можна підключати додаткові плагіни, якщо потрібно -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
   </body>
 </html>
