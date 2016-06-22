@@ -23,10 +23,11 @@ div {
     float: right;
 }
 .footer {
+    float: center;
 	position: fixed; /* Фиксированное положение */
     bottom: 0; /* Левый нижний угол */
     padding: 10px; /* Поля вокруг текста */
-    width: 100%; /* Ширина слоя */
+    width: 75%; /* Ширина слоя */
     
     
 }
@@ -48,3 +49,7 @@ div {
     border-top-left-radius: 15em 1em;
     border-bottom-right-radius: 15em 1em;
 }
+.text-align_c {
+    text-align:center;
+}
+
